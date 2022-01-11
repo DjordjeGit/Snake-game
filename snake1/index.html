@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="game.js" type="module"></script>
+    <style>
+      body {
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100wh;
+        height: 100hv;
+        margin: 0;
+      }
+
+      .playArea {
+        display: grid;
+        grid-template-columns: repeat(21, 1fr);
+        grid-template-rows: repeat(21, 1fr);
+        width: 100vmin;
+        height: 100vmin;
+        background-color: white;
+      }
+      .snake {
+        border-radius: 30%;
+        background-color: hsl(58, 95%, 47%);
+        border: 0.25 solid black;
+        margin: 1px;
+        box-shadow: 0.8px 0.91px 4px rgb(77, 152, 250);
+      }
+      .food {
+        border-radius: 100%;
+        box-shadow: 1.1px 0.91px 2px rgb(96, 202, 42);
+        border: 0.25 solid black;
+        background-color: hsl(51, 86%, 51%);
+      }
+      .head {
+        border-radius: 35%;
+        box-shadow: 0.8px 0.91px 2px rgb(66, 121, 192);
+        background: rgb(242, 139, 5);
+      }
+      .score {
+        width: 100px;
+        height: 50px;
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        color: rgb(255, 255, 255);
+        padding: 5px;
+        margin: 5px;
+        font-size: 22px;
+        font-weight: 500;
+        line-height: 30px;
+      }
+    </style>
+    <title>snake</title>
+  </head>
+  <body>
+    <div class="score"></div>
+    <div class="playArea"></div>
+  </body>
+</html>
